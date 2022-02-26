@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	
+<!-- interests questionare -->
+	<category>
+	    <pattern>YES I AM A COMPUTER SCIENCE MAJOR</pattern>
+	    <template>Which of the following aspects of computing interests you 
+	    the most?
+	    <button>
+	        <text>Software programming</text>
+	        <postback>SOFTWARE PROGRAMMING</postback>
+        </button>
+        <button>
+	        <text>Building/designing websites</text>
+	        <postback>WEBSITE DEVELOPMENT</postback>
+        </button>
+        <button>
+	        <text>Working with physical components of computers and hardware</text>
+	        <postback>HARDWARE ENGINEER</postback>
+        </button>
+        <button>
+	        <text>Working with Data</text>
+	        <postback>DATA ADMINISTRATOR</postback>
+        </button>
+        <button>
+	        <text>Keeping networks safe and secure</text>
+	        <postback>SECURITY ANALYST</postback>
+        </button>
+	    
+	    </template>
+    </category>
+    
+<!-- Carears -->
+    <category>
+        <pattern>SOFTWARE PROGRAMMING</pattern>
+        <template>I'd suggest checking out a Software Engineer career!
+            <card>
+                <title>Software Engineer</title>
+                <image>https://res.cloudinary.com/highereducation/images/f_auto,q_auto/c_fill,f_auto,fl_lossy,q_auto:best,w_425,h_425/v1631898316/ComputerScience.org/GettyImages-1180183927/GettyImages-1180183927.jpg?_i=AA</image>
+                <button>
+                    <text>Learn More</text>
+                    <url>https://www.computerscience.org/careers/software-engineer/</url>
+                </button>
+                
+                <button>
+                    <text>Back</text>
+                    <postback>YES I AM A COMPUTER SCIENCE MAJOR</postback>
+                </button>
+            </card>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>WEBSITE DEVELOPMENT</pattern>
+        <template>I'd suggest checking out a Website Development career!
+            <card>
+                <title>Web Development</title>
+                <image>https://res.cloudinary.com/highereducation/images/f_auto,q_auto/c_fill,f_auto,fl_lossy,q_auto:best,w_425,h_425/v1631898412/ComputerScience.org/GettyImages-1097995482/GettyImages-1097995482.jpg?_i=AA</image>
+                <button>
+                    <text>Learn More</text>
+                    <url>https://www.computerscience.org/careers/web-developer/</url>
+                </button>
+                
+                <button>
+                    <text>Back</text>
+                    <postback>YES I AM A COMPUTER SCIENCE MAJOR</postback>
+                </button>
+            </card>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>HARDWARE ENGINEER</pattern>
+        <template>I'd suggest checking out a Hardware Engineer career!
+            <card>
+                <title>Hardware Engineer</title>
+                <image>https://res.cloudinary.com/highereducation/images/f_auto,q_auto/c_fill,f_auto,fl_lossy,q_auto:best,w_425,h_425/v1631900959/ComputerScience.org/GettyImages-596472059/GettyImages-596472059.jpg?_i=AAg</image>
+                <button>
+                    <text>Learn More</text>
+                    <url>https://www.computerscience.org/careers/computer-hardware-engineer/</url>
+                </button>
+                
+                <button>
+                    <text>Back</text>
+                    <postback>YES I AM A COMPUTER SCIENCE MAJOR</postback>
+                </button>
+            </card>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>DATA ADMINISTRATOR</pattern>
+        <template>I'd suggest checking out a Data Administrator career!
+            <card>
+                <title>Data Administrator</title>
+                <image>https://res.cloudinary.com/highereducation/images/f_auto,q_auto/c_fill,f_auto,fl_lossy,q_auto:best,w_425,h_425/v1631898423/ComputerScience.org/GettyImages-1218610083/GettyImages-1218610083.jpg?_i=AA</image>
+                <button>
+                    <text>Learn More</text>
+                    <url>https://www.computerscience.org/careers/database-administrator/</url>
+                </button>
+                
+                <button>
+                    <text>Back</text>
+                    <postback>YES I AM A COMPUTER SCIENCE MAJOR</postback>
+                </button>
+            </card>
+        </template>
+    </category>
+    
+       <category>
+        <pattern>SECURITY ANALYST</pattern>
+        <template>I'd suggest checking out a Security Analyst career!
+            <card>
+                <title>Security Analyst</title>
+                <image>https://res.cloudinary.com/highereducation/images/f_auto,q_auto/c_fill,f_auto,fl_lossy,q_auto:best,w_425,h_425/v1631898410/ComputerScience.org/GettyImages-1194430821/GettyImages-1194430821.jpg?_i=AA</image>
+                <button>
+                    <text>Learn More</text>
+                    <url>https://www.computerscience.org/careers/information-security-analyst/</url>
+                </button>
+                
+                <button>
+                    <text>Back</text>
+                    <postback>YES I AM A COMPUTER SCIENCE MAJOR</postback>
+                </button>
+            </card>
+        </template>
+    </category>
+	
+	
+</aiml>
