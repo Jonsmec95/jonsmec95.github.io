@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  
+<!-- Carear advice start. -->
+<category>
+  <pattern>HI</pattern>
+  <template>Hey there! My name is Owlbot, the career advising assistant. 
+  Type 'start' to begin :)</template>
+</category>
+
+
+<category>
+    <pattern>START</pattern>
+    <template>
+        Are you seeking career advice ?
+        <button>
+            <text>Yes</text>
+            <postback>YES I AM SEEKING CAREER ADVICE</postback>
+        </button>
+        
+        <button>
+            <text>No</text>
+            <postback>NO I AM NOT SEEKING CAREER ADVICE</postback>
+        </button>
+        
+    </template>
+</category>
+
+<category>
+    <pattern>NO I AM NOT SEEKING CAREER ADVICE</pattern>
+    <template>Sorry, that is my only purpose :(</template>
+</category>
+
+
+<category>
+    <pattern>YES I AM SEEKING CAREER ADVICE</pattern>
+    <template>Great! Are you a Computer Science major?
+        <button>
+            <text>Yes</text>
+            <postback>YES I AM A COMPUTER SCIENCE MAJOR</postback>
+        </button>
+        
+        <button>
+            <text>No</text>
+            <postback>NO I AM NOT A COMPUTER SCIENCE MAJOR</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>NO I AM NOT A COMPUTER SCIENCE MAJOR</pattern>
+    <template>Sorry I can only help Computer Science majors :(</template>
+</category>
+    
+
+
+</aiml>
